@@ -1,0 +1,9 @@
+spring:
+  ai:
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        model: ${OLLAMA_CHAT_MODEL:gemma2:9b}
+        temperature: 0.7
+      init:
+        pull-model-strategy: when_missing
